@@ -1,0 +1,207 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Cookie";
+  src: url(./fuentes/Butter\ Cookies.otf);
+}
+
+.portada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(./img/beso.jpeg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.info {
+  width: 75%;
+  /*estaba al 50%*/
+  text-align: center;
+}
+
+.fecha {
+  font-size: 30px;
+  color: #fff;
+}
+
+span.fecha::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 10px 0 10px;
+}
+
+span.fecha::after {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 10px 0 10px;
+}
+
+.titulo {
+  width: 100%;
+  font-family: "Cookie";
+  font-size: 100px;
+  text-align: center;
+  color: #fff;
+}
+
+span.amper {
+  line-height: 80px;
+  display: inline-block;
+  background-color: #c6d7cf;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  color: #516a67;
+  font-size: 90px;
+}
+
+.line {
+  border: 1px solid #fff;
+  width: 70%;
+  margin: auto;
+}
+
+.flores {
+  width: 100%;
+}
+
+.flores img {
+  width: 150px;
+  margin-top: 25px;
+}
+
+.flores-text {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.segundo {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+}
+
+#playButton {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#playButton {
+  background-color: #516a67;
+  color: #c6d7cf;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.circle i {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 30px;
+  animation: animate 1s linear infinite;
+
+
+
+  @keyframes animate {
+    0% {
+      transform: translateY(-20px);
+
+    }
+
+  }
+
+
+}
+
+
+
+
+.wave {
+  width: 100vw;
+  /* Ajustar al ancho completo de la pantalla */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+
+}
+
+
+
+
+@media only screen and (min-width: 1280px) {
+
+  .portada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info {
+
+    width: 70%;
+    /*estaba al 50%*/
+
+    text-align: center !important;
+  }
+
+
+
+  .circle i {
+    margin-top: 80px;
+    color: #fff;
+    font-size: 30px;
+    animation: animate 1s linear infinite;
+
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateY(-20px);
+
+    }
+
+
+  }
+
+  .titulo {
+    width: 100%;
+    font-family: "Cookie";
+    font-size: 150px;
+    text-align: center;
+    color: #fff;
+  }
+
+
+
+
+  /* Estilos específicos para monitores de escritorio */
+  /* Aquí puedes agregar tus estilos CSS */
+}
