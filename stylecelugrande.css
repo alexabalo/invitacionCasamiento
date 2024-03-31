@@ -1,9 +1,11 @@
 
 /*...................................................................MAX WIDTH 767.............................................*/
 
-@media only screen and (max-width: 768px)
- {
 
+/*...................................................................MAX WIDTH 767.............................................*/
+
+@media only screen and (max-width: 767px)
+ {
 
   
 
@@ -32,11 +34,8 @@
   }
 
   .wave {
-    width: 100%;
+    width: 100vw;
     position: relative;
-    top: 0;
-    bottom: 0;
-    margin-top: 20px;
   }
 
   span.amper {
@@ -44,17 +43,15 @@
     width: 50px;
     height: 50px;
     font-size: 80px;
-    background-color: blue;
   }
 
   .line {
     width: 90%;
     /* Reducir el ancho de la línea */
- 
   }
 
   .flores img {
-    width: 30%;
+    width: 150px;
 
   }
 
@@ -177,7 +174,7 @@
     margin: 20px 0;
     font-weight: 600;
     border-radius: 10px;
-    width: 40%;
+    width: 50%;
     height: 60px;
 
   }
@@ -311,7 +308,7 @@
   }
 
   .vestimenta p{
-    margin: 20px ;
+    margin: 20px 20px;
     font-size: 2.3rem;
     font-family: 'Cookie';
     color: #354e4b;
@@ -324,20 +321,17 @@
   
 
   .wavefinalabajo {
-    width: 100%;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    margin-top: 200px;
-
+    width: 100vw;
+    position: absolute;
+    margin-top: -90px;
   }
 
   .ultimo{
 
-  width: 90vw;
+    width: 100%;
   /*estaba al 50%*/ 
   background-color: #fcefde;
-
+  padding: 30px;
   text-align: center !important;
   }
 
