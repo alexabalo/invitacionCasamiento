@@ -36,7 +36,7 @@
   }
 
   .titulo {
-    font-size: 120px;
+    font-size:7rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +68,7 @@
   }
 
   .flores img {
-    width: 120px;
+    width: 35%;
 
   }
 
