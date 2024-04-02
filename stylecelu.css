@@ -358,7 +358,7 @@
     width: 100%;
   /*estaba al 50%*/ 
   background-color: #fcefde;
-  padding: 30px;
+  padding: 20px;
   text-align: center !important;
   }
 
@@ -366,7 +366,7 @@
   .ultimotitulo {
     width: 100%;
     font-family: "Cookie";
-    font-size: 4.3rem;
+    font-size: 4.2rem;
     text-align: center;
     color: #516A67;
   }
