@@ -1,279 +1,443 @@
-.circulo {
-    display: flex;
-    background-color: #fcefde;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url(./img/circuloflores2.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    /*
-    margin: 2em auto;
-    */
-    color: #000;
-    height: 500px;
 
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
 
-  .circulo h4 {
-    margin-top: -50px;
-    font-family: "Cookie";
-    font-size: 70px;
-    text-align: center;
-  }
+@font-face {
+  font-family: "Cookie";
+  src: url(./fuentes/Butter\ Cookies.otf);
+}
 
-  #Contador {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
-  .simply-amount {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 0px 10px;
-    font-size: 1.5rem;
-    font-weight: 600;
-  }
+.portada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(./img/beso.jpeg);
+  background-repeat: no-repeat;
+  background-position: end;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
 
-  .simply-word {
-    text-align: center;
-    font-size: 1.2rem;
-    margin: 0px 10px;
-    color: #947b4f;
-    font-weight: 600;
-  }
+.info {
+  width: 80%;
+  /*estaba al 50%*/
+  text-align: center ;
+}
 
-  .ceremonia {
-    background-color: #fcefde;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
+.fecha {
+  font-size: 3rem;
+  color: #fff;
+}
 
-  .etiqueta img {
-    margin: 30px auto;
-    width: 90vw;
-  }
-
-  .eventos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .dias {
-    margin-bottom: 50px;
-  }
-
-  .dia h4 {
-    margin: 10px 0;
-    font-size: 2rem;
-    color: #516A67;
-    font-weight: 600;
-  }
-
-  .dia p {
-    margin: 30px 20px;
-    font-size: 1.3rem;
-    color: #354e4b;
-  }
-
-  button.btn-dark {
-    background-color: #c6d7cf;
-    font-size: 1.3rem;
-    border: none;
-    margin: 20px 0;
-    font-weight: 600;
-    border-radius: 10px;
-    width: 50%;
-    height: 60px;
-
-  }
-
-  button.btn-dark a {
-    color: red;
-    text-decoration: none;
-    color: #516A67;
-  }
-
-  section.retrato {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #fcefde;
-    position: relative;
-    padding-bottom: 50px;
-  }
-
-  .retrato h4 {
-    font-family: "Cookie";
-    font-size: 5rem;
-    color: #354e4b;
-  }
-
-/*...................................................................CAROUSEL............................................*/
-  .d-block {
-
-    height: 400px;
-    margin: 20px auto;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-
-  .retrato img {
-
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 80px;
-  }
-
-  .retrato p {
-    margin: 20px 20px;
-    font-size: 1.3rem;
-    color: #354e4b;
-  }
-
-/*..................................................................PLAY BUTTON.............................................*/
-  #playButton {
-    position: fixed;
-    bottom: 60px;
-    right: 20px;
-    padding: 10px 20px;
-  border:none;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 1000;
-  }
+span.fecha::before {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 10px 0 10px;
+}
  
-  #playButton {
-    background-color: #516a67;
-    color:  #c6d7cf;
-    font-weight: 600;
-    font-size: 1.2rem;
-  }
+span.fecha::after {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background-color: #fff;
+  margin: 0 10px 0 10px;
+}
 
-  .camara img {
-    width: 30%;
-    padding: 20px 0px;
-  }
+.titulo {
+  width: 100%;
+  font-family: "Cookie";
+  font-size: 10vw;
+  text-align: center;
+  color: #fff;
+}
 
-  .final {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-  
-    background-color: #fcefde;
-    text-align: center;
-    padding: 60px 30px;
-  }
 
-  .vestimenta {
-    width: 100%;
-    min-height: 300px;
-    border-radius: 10%;
-    padding: 20px 40px;
-  }
 
-  .vestimenta img {
-    width: 50%;
-    height: 50%;
-    margin: 50px;
-  }
 
- 
+span.amper {
+  line-height: 80px;
+  display: inline-block;
+  background-color: #c6d7cf;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  color: #516a67;
+  font-size: 90px;
+}
 
-  .final p {
-    margin: 20px 20px;
-    font-size: 1.3rem;
-    color: #354e4b;
-  }
+.line {
+  border: 1px solid #fff;
+  width: 70%;
+  margin: auto;
+}
 
-  .segundoretrato {
-    background-image: url(./img/1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100vw;
-    height: 60vh;
-    position: relative;
-  }
+.flores {
+  width: 100%;
+}
 
-  .wavefinal {
-    width: 100%;
-    top:-6px;
-    left: 0;
-    bottom: 0;
-    transform: rotateX(180deg);
-  }
+.flores img {
+  width: 150px;
+  margin-top: 25px;
+}
 
-  .final img{
-    margin: 25px auto;
-    width: 90vw;
-  }
 
-  .vestimenta p{
-    margin: 20px 20px;
-    font-size: 2.3rem;
-    font-family: 'Cookie';
-    color: #354e4b;
-  }
+.flores-text {
 
-  .vestimenta img{
-    width: 50%;
-  }
-
-  
-
-  .wavefinalabajo {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-
-  }
-
-  .ultimo{
-
-    width: 100%;
-  /*estaba al 50%*/ 
-  background-color: #fcefde;
-  padding: 30px;
-  text-align: center !important;
-  }
-
-  
-  .ultimotitulo {
-    width: 100%;
-    font-family: "Cookie";
-    font-size: 4.8rem;
-    text-align: center;
-    color: #516A67;
-  }
-  
-  footer{
-    width: 100%;
-  }
-  .creado{
-    background-color: #f0ca9a;
-    width: 100%;
-    padding: 20px 30px 15px 20px;
-    text-align: center;
-  }
+  font-size: 2.5rem;
+  color: #fff;
+  margin-top: 25px ;
+  text-align: center;
 
 
 }
+
+.wave{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+
+}
+
+.segundo {
+  width: 100%;
+  height: 100vh;
+
+}
+
+#playButton {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  padding: 10px 20px;
+border:none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#playButton {
+  background-color: #516a67;
+  color:  #c6d7cf;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.circle i{
+  margin-top: 100px;  
+  color: #fff;
+  font-size: 30px;
+  animation: animate 1s linear infinite;
+
+}
+
+@keyframes animate 
+{
+   0%{
+
+     transform: translateY(-20px);
+     
+   }
+
+  
+}
+
+.circulo {
+  display: flex;
+  background-color: #fcefde;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(./img/circuloflores2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /*
+  margin: 2em auto;
+  */
+  color: #000;
+  height: 500px;
+
+}
+
+.circulo h4 {
+  margin-top: -50px;
+  font-family: "Cookie";
+  font-size: 70px;
+  text-align: center;
+}
+
+#Contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.simply-amount {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.simply-word {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0px 10px;
+  color: #947b4f;
+  font-weight: 600;
+}
+
+.ceremonia {
+  background-color: #fcefde;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.etiqueta img {
+  margin: 30px auto;
+  width: 90vw;
+}
+
+.eventos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.dias {
+  margin-bottom: 50px;
+}
+
+.dia h4 {
+  margin: 10px 0;
+  font-size: 2rem;
+  color: #516A67;
+  font-weight: 600;
+}
+
+.dia p {
+  margin: 30px 20px;
+  font-size: 1.3rem;
+  color: #354e4b;
+}
+
+button.btn-dark {
+  background-color: #c6d7cf;
+  font-size: 1.3rem;
+  border: none;
+  margin: 20px 0;
+  font-weight: 600;
+  border-radius: 10px;
+  width: 50%;
+  height: 60px;
+
+}
+
+button.btn-dark a {
+  color: red;
+  text-decoration: none;
+  color: #516A67;
+}
+
+section.retrato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fcefde;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.retrato h4 {
+  font-family: "Cookie";
+  font-size: 5rem;
+  color: #354e4b;
+}
+
+/*...................................................................CAROUSEL............................................*/
+.d-block {
+
+  height: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.retrato img {
+
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 80px;
+}
+
+.retrato p {
+  margin: 20px 20px;
+  font-size: 1.3rem;
+  color: #354e4b;
+}
+
+/*..................................................................PLAY BUTTON.............................................*/
+#playButton {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  padding: 10px 20px;
+border:none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#playButton {
+  background-color: #516a67;
+  color:  #c6d7cf;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.camara img {
+  width: 30%;
+  padding: 20px 0px;
+}
+
+.final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+
+  background-color: #fcefde;
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.vestimenta {
+  width: 100%;
+  min-height: 300px;
+  border-radius: 10%;
+  padding: 20px 40px;
+}
+
+.vestimenta img {
+  width: 50%;
+  height: 50%;
+  margin: 50px;
+}
+
+
+
+.final p {
+  margin: 20px 20px;
+  font-size: 1.3rem;
+  color: #354e4b;
+}
+
+.segundoretrato {
+  background-image: url(./img/1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+}
+
+.wavefinal {
+  width: 100%;
+  top:-6px;
+  left: 0;
+  bottom: 0;
+  transform: rotateX(180deg);
+}
+
+.final img{
+  margin: 25px auto;
+  width: 90vw;
+}
+
+.vestimenta p{
+  margin: 20px 20px;
+  font-size: 2.3rem;
+  font-family: 'Cookie';
+  color: #354e4b;
+}
+
+.vestimenta img{
+  width: 50%;
+}
+
+
+
+.wavefinalabajo {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+}
+
+.ultimo{
+
+  width: 100%;
+/*estaba al 50%*/ 
+background-color: #fcefde;
+padding: 30px;
+text-align: center !important;
+}
+
+
+.ultimotitulo {
+  width: 100%;
+  font-family: "Cookie";
+  font-size: 4.8rem;
+  text-align: center;
+  color: #516A67;
+}
+
+footer{
+  width: 100%;
+}
+.creado{
+  background-color: #f0ca9a;
+  width: 100%;
+  padding: 20px 30px 15px 20px;
+  text-align: center;
+}
+
+
